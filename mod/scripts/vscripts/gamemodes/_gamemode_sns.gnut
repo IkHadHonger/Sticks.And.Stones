@@ -138,7 +138,8 @@ void function OnPlayerRespawned( entity player )
 	player.GiveWeapon( "mp_weapon_wingman_n", mods)
 	if (file.softball_enabled) {
 		mods.append("jump_kit") // the funny
-		player.GiveWeapon( "mp_weapon_softball, mods" )                
+		array<string> mods = ["pas_fast_ads", "tactical_cdr_on_kill", "pas_fast_swap", "pas_fast_reload"]
+		player.GiveWeapon( "mp_weapon_wingman, mods" )                
 	}
 	player.GiveOffhandWeapon( "mp_weapon_grenade_sonar", OFFHAND_LEFT )
 	player.GiveOffhandWeapon( "mp_weapon_thermite_grenade", OFFHAND_RIGHT )
